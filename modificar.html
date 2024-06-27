@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilo_adm.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Administrador WM</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="px-lg">
+
+            <!--* Marca y menú de nav -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index_adm.html"><img src="assets/wonder-logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="agregar.html">Agregar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="modificar.html">Modificar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="borrar.html">Borrar</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--* P A N E L -->
+            <div class="row py-4">
+                <div class="col-lg-12 mx-auto head">
+                    <div class="p-2 banner col-lg-6">
+                        <h3 class="">Panel Administrador</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container col-sm-12 col-md-9">
+                <h5 class="mx-5">Modificar Menú</h5>
+                <hr class="my-2">
+            </div>
+
+
+            <!--? F O R M U L A R I O    M E N Ú    -->
+            <div class="col agregar">
+                <div class="col-5 card carga">
+                    <div class="card-header">
+                        <h5>Datos del Menú</h5>
+                    </div>
+                    <div class="card-body">
+                        <form action="galeria.php" method="post" enctype="multipart/form-data">
+                            <div>
+                                <label for="archivo">Imagen del Producto</label>
+                                <input required class="form-control" type="file" name="archivo" id="archivo">
+                            </div>
+                            <div>
+                                <label for="nombre">Nombre del Producto</label>
+                                <input required class="form-control" type="text" name="nombre" id="nombre">
+                            </div>
+                            <div>
+                                <label for="descripcion">Descripción del Producto</label>
+                                <textarea required class="form-control" maxlength="60" name="descripcion"
+                                    id="descripcion" cols="10" rows="1"></textarea>
+                                <div>
+                                    <label for="enlace">Precio del Producto</label>
+                                    <input required class="form-control mb-2" type="text" name="enlace" id="enlace">
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <input class="btn bg-info " type="submit" value="Modificar Producto">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--? FIN DEL FORMULARIO MENÚ-->
+
+            <div class="container col-sm-12 col-md-9 py-5">
+                <h5 class="mx-5">Modificar Promo</h5>
+                <hr class="my-2">
+            </div>
+            <!--? F O R M U L A R I O    P R O M O    -->
+            <div class="col agregar">
+                <div class="col-5 card carga ">
+                    <div class="card-header">
+                        <h5>Datos de la Promo</h5>
+                    </div>
+                    <div class="card-body">
+                        <form action="galeria.php" method="post" enctype="multipart/form-data">
+                            <div>
+                                <label for="archivo">Imagen del Promo</label>
+                                <input required class="form-control" type="file" name="archivo" id="archivo">
+                            </div>
+                            <div>
+                                <label for="nombre">Nombre del Promo</label>
+                                <input required class="form-control" type="text" name="nombre" id="nombre">
+                            </div>
+                            <div>
+                                <label for="descripcion">Descripción del Promo</label>
+                                <textarea required class="form-control" maxlength="60" name="descripcion"
+                                    id="descripcion" cols="10" rows="1"></textarea>
+                                <div>
+                                    <label for="enlace">Precio del Promo</label>
+                                    <input required class="form-control mb-2" type="text" name="enlace" id="enlace">
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <input class="btn bg-info " type="submit" value="Modificar Promo">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--? FIN DEL FORMULARIO PROMO-->
+            <div class="py-2 red">
+                <div class="text-center fw-bolder">
+                    <div>&copy Diseñado por RedActiva</div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

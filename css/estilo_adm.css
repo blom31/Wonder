@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'mifuente';
+    src: url('../assets/font/Roboto-Black.ttf');
+    /* Otros estilos de la fuente, como weight y style */
+}
+
+body {
+    background: #f4f4f4;
+}
+
+nav {
+    margin-top: 5px;
+    box-shadow: -5px 5px 5px rgb(222, 222, 222);
+    height: 60px;
+    font-family: 'mifuente';
+    font-weight: bold;
+    font-size: large;
+}
+
+nav img {
+    width: 70px;
+    height: 70px;
+}
+.tarjetas{
+    display: flex;
+}
+.agregar{
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.red {
+    margin-top: 20px;
+    background-color: rgb(244, 244, 244);
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        height: inherit;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    
+}

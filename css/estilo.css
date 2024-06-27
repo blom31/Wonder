@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'mifuente';
+    src: url('../assets/font/Roboto-Black.ttf');
+    /* Otros estilos de la fuente, como weight y style */
+}
+
+body {
+    background: #f4f4f4;
+}
+
+nav {
+    margin-top: 5px;
+    box-shadow: -5px 5px 5px rgb(222, 222, 222);
+    height: 60px;
+    font-family: 'mifuente';
+    font-weight: bold;
+    font-size: large;
+}
+
+nav img {
+    width: 70px;
+    height: 70px;
+}
+.tarjetas{
+    display: flex;
+
+}
+
+.menu {
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.banner-medio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.bannerimg img {
+    height: 300px;
+}
+
+.text-banner {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-banner h2 {
+    padding: 15px;
+}
+
+.boton-banner {
+    color: white;
+    box-shadow: -5px 5px 5px rgb(149, 147, 147);
+    text-decoration: none;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.foot {
+    height: 220px;
+}
+
+.red {
+    margin-top: -30px;
+}
+
+.foot-marca {
+    font-size: xx-large;
+    font-weight: 500;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo img {
+    width: 90px;
+    height: 90px;
+}
+
+.mapa img {
+    width: 200px;
+    height: 200px;
+}
+.whatsapp{
+    position: fixed;
+    bottom: 25px;
+    right: 15px;
+    width: 7%;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        height: inherit;
+    }
+    .imgcarousel {
+        height: 300px;
+    }
+    .tarjeta3{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .imgcarousel {
+        height: 100vh;
+        width: 100vw;
+    }
+    .bannerimg{
+        display: none;
+    }
+    .text-banner {
+        justify-content: center;
+        align-items: center;
+    }
+    .text-banner h2{
+        padding: 12px;
+        margin-bottom: 20px;
+        }
+        .whatsapp img{
+            right: 45px;
+            width: 100%;
+        }
+}
